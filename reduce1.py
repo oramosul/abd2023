@@ -1,14 +1,14 @@
 import sys
 
-palabra_actual = None
+palabra = None
 cnt = 1
 
-for line in sys.stdin:
-	palabra, contador = line.split('\t')
-	if palabra == palabra_actual:
-		cnt += 1
-	else:
-		if palabra_actual != None:
-			print(palabra_actual, '\t', cnt)
-		cnt = 1
-		palabra_actual = palabra
+for linea in sys.stdin:
+    palabra_nueva, contador = linea.split(' ')
+    if (palabra_nueva == palabra):
+        cnt += 1
+    else:
+        if (palabra != None):
+            print(palabra, cnt)
+        cnt = 1
+        palabra = palabra_nueva

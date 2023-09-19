@@ -1,6 +1,6 @@
 import sys
 
-for line in sys.stdin:
-	keys = line.split()
-	for palabra in keys:
-		print(palabra, '\t', "1")
+for linea in sys.stdin:
+    claves = linea.split()
+    for palabra in claves:
+        print(palabra, "1")
